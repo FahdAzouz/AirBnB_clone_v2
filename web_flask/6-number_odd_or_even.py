@@ -6,7 +6,7 @@ Routes:
     /: Displays 'Hello HBNB!'
     /hbnb: Displays "HBNB"
     /c/<text>: Displays C followed by the value of the text variable
-    /python/<text>: display “Python ”, followed by the value of 
+    /python/<text>: display “Python ”, followed by the value of
                     the text variable
     /number/<n>: display “n is a number” only if n is an integer
     /number_template/<n>: display a HTML page only if n is an integer:
