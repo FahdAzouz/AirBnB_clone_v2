@@ -71,8 +71,8 @@ class DBStorage:
     def close(self):
         """ calls remove()
         """
-        self.__session.close()
-
+        self.__session.remove()
+    
     def reload(self):
         """configuration
         """
@@ -80,7 +80,3 @@ class DBStorage:
         sec = sessionmaker(bind=self.__engine, expire_on_commit=False)
         Session = scoped_session(sec)
         self.__session = Session()
-
-    def close(self):
-        ''' call remove() '''
-        self.__session.remove()
